@@ -18,7 +18,7 @@ function 숙제2(x) {
 }
 //숙제3
 function 숙제3(money, house, charm) {
-    var score = 0;
+    let score = 0;
     score = score + money;
     if (house === true) {
         score += 500;
@@ -31,14 +31,14 @@ function 숙제3(money, house, charm) {
     }
 }
 function 내함수(x) {
-    var arr = [];
+    let arr = [];
     arr[0] = x;
 }
 내함수(123);
 //숙제1
 function 숫자숙제(x) {
-    var newArr = [];
-    x.forEach(function (el) {
+    let newArr = [];
+    x.forEach((el) => {
         if (typeof el === "string") {
             newArr.push(Number(el));
         }
