@@ -1,4 +1,4 @@
-export {};
+
 
 let 이름: string = "sophie";
 let 나이: number = 50;

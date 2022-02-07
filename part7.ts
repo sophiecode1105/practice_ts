@@ -1,11 +1,16 @@
 export {};
-
-class Person {
-  name: string;
-  constructor() {
-    this.name = "kim";
-  }
+interface Square {
+  color: string;
+  width: number;
 }
 
-let 사람1 = new Person();
-let 사람2 = new Person();
+let square: Square = { color: "red", width: 100 };
+
+interface Student {
+  name: string;
+}
+let 학생: Student = { name: "kim" };
+interface Teacher extends Student {
+  age: number;
+}
+let 선생: Teacher = { name: "kim", age: 20 };
